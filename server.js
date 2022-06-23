@@ -15,6 +15,8 @@ app.get("/contact", function(req, res) {
 
 app.get("/about", function(req, res) {
     res.send("My name is Louis.");
+    // __dirname: path of current folder -> absolute path
+    res.sendFile(__dirname + "/index.html");
 })
 
 // app will listen to port 3000 for http request send to our server
